@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "188968251332",
+    "project_id": "minik-adimlar60",
+    "storage_bucket": "minik-adimlar60.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188968251332:android:f3bbb10ddef4efac24be91",
+        "android_client_info": {
+          "package_name": "com.yilmaz.minikadimlar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChXb35yYN9dlFhOov13NhjjXowas6YPxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
