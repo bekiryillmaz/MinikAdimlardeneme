@@ -3,6 +3,7 @@ package com.yilmaz.minikadimlar
 import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -21,8 +22,10 @@ class GirisActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
         // kullanicinin oturup acip acmadigini kontrol edelim
         var currentUser = auth.currentUser
-
-
+        if (currentUser != null) {
+            startActivity(Intent(this@GirisActivity, ProfilActivity::class.java))
+            finish()
+        }
         // giris yap butonuna tiklandiginda
         binding.girisyapbutton.setOnClickListener {
             var girisemail = binding.girisemail.text.toString()
@@ -37,6 +40,13 @@ class GirisActivity : AppCompatActivity() {
             // giris bilgilerimizi dogrulayip giris yapiyoruz
             auth.signInWithEmailAndPassword(girisemail,girisparola)
                 .addOnCompleteListener(this){
+                    if (it.isSuccessful){
+                        intent = Intent(applicationContext, ProfilActivity::class.java)
+                        startActivity(intent)
+                        finish()
+                    } else{ Toast.makeText(applicationContext,"Giris hatali,lutfen tekrar deneyiniz"
+                        ,Toast.LENGTH_LONG).show()
+                    }
                 }
 
         }

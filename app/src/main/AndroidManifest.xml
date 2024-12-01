@@ -26,25 +26,16 @@
             android:exported="false" />
         <activity
             android:name=".GirisActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ActivityPsifirla"
-            android:exported="false" />
-        <activity
-            android:name=".ActivityGuncelle"
-            android:exported="false" />
-        <activity
-            android:name=".ActivityGiris"
-            android:exported="false" />
-        <activity
-            android:name=".ActivityProfil"
-            android:exported="true">
+            android:exported="true" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+    </activity>
+
+
     </application>
 
 </manifest>

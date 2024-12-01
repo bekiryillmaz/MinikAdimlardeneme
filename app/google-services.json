@@ -1,13 +1,14 @@
 {
   "project_info": {
-    "project_number": "188968251332",
-    "project_id": "minik-adimlar60",
-    "storage_bucket": "minik-adimlar60.firebasestorage.app"
+    "project_number": "1018824872914",
+    "firebase_url": "https://minik-adimlar-a5eef-default-rtdb.firebaseio.com",
+    "project_id": "minik-adimlar-a5eef",
+    "storage_bucket": "minik-adimlar-a5eef.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:188968251332:android:f3bbb10ddef4efac24be91",
+        "mobilesdk_app_id": "1:1018824872914:android:113f682b281e73908aae0b",
         "android_client_info": {
           "package_name": "com.yilmaz.minikadimlar"
         }
@@ -15,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyChXb35yYN9dlFhOov13NhjjXowas6YPxQ"
+          "current_key": "AIzaSyABYeDDeGPbiKnu3FcbP6LhHc57DA6JvcM"
         }
       ],
       "services": {
